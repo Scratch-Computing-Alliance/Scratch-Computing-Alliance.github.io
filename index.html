@@ -1,138 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SCA | Home</title>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://scratch-computing-alliance.github.io/favicon.ico"
-    />
-    <style>
-      html {
-        font-family: "TW Cen MT";
-      }
-      body {
-        font-size: large;
-        background-color: #fafaf6;
-      }
-      .nonbody {
-        display: flex;
-        background-color: #5d617c;
-        border-radius: 100px;
-        padding: 10px 50px;
-        gap: 10px;
-        font-size: x-large;
-        color: white;
-        justify-self: center;
-        align-items: center;
-        width: 93%;
-      }
-      .nonbody img {
-        height: 50px;
-        border-radius: 10px;
-        transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      .nonbody a {
-        color: white;
-      }
-      a {
-        color: rgb(77, 58, 244);
-        text-decoration: none;
-        transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      a:hover,
-      .nonbody a:hover {
-        color: rgb(56, 193, 247);
-        text-decoration: underline;
-      }
 
-      .nonbody a:hover {
-        background-color: #43465b;
-        height: 100%;
-        padding: 10px;
-        border-radius: 100px;
-      }
-      .nonbody img:hover {
-        height: 55px;
-      }
-      #foot {
-        font-size: medium;
-        margin: 20px 0 0 0;
-      }
-      #foot a {
-        text-decoration: underline;
-      }
-      #banner h1, #banner h3 {
-        justify-self: center;
-      }
-      #banner {
-        margin: 25px;
-        justify-self: center;
-        color: #5d617c;
-        background-color: #1a1a1b;
-        width: 100%;
-        padding: 100px 0;
-        font-size:xx-large;
-        border-radius: 50px;
-      }
-      main{
-        justify-self: center;
-        text-align: center;
-        
-      }
-    </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const copyright = document.getElementById("copyright");
+<head>
+	<title>SCA | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.png" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
 
-        let d = new Date();
-        const years = d.getFullYear();
-        console.log(years);
+<body>
+	<div class="nonbody" id="head">
+		<img src="https://github.com/Scratch-Computing-Alliance/Scratch-Computing-Alliance.github.io/blob/main/favicon.png?raw=true"
+			onclick="redirHome()" />
+		| <a href="https://sites.google.com/view/skyhubsca/home">SkyHub</a> •
+		<a href="https://scratch.mit.edu/discuss/topic/768740/">Forums</a> •
+		<a href="https://github.com/Scratch-Computing-Alliance/SCA-OSSLs/tree/main/open-source">Licenses</a>
+		• <a href="https://scratch.mit.edu/studios/35370452/">Studio</a> •
+		<a href="https://scratch.mit.edu/studios/35370452/curators/">Members</a> •
+		<a href="https://github.com/Scratch-Computing-Alliance">GitHub</a> •
+		<a href="https://scratch.mit.edu/studios/36131202">Docs</a>
+	</div>
+	<section id="banner">
+		<h1>Scratch Computing Alliance</h1>
+		<h3>The future is open</h3>
+	</section>
+	<main>
+		This is the official website for the Scratch Computing Alliance. Our goal is
+		to unite techy Scratchers—could that be you?<br />
+		If you want to join the SCA, you can ask
+		<a href="https://scratch.mit.edu/studios/35370452/comments">here</a>!
+		<br />
+	</main>
+	<div class="nonbody" id="foot">
+		<p id="copyright">
+			© 2024-%CURRYEAR% Scratch Computing Alliance. This website is maintained
+			by the
+			<a href="https://github.com/Scratch-Computing-Alliance/">SCA GitHub</a>.
+			Last updated - 6/30/2025 2:52:55pm.
+		</p>
+	</div>
+	<script src="index.js"></script>
+</body>
 
-        copyright.innerHTML = copyright.innerHTML.replace("%CURRYEAR%", years);
-      });
-
-      function redirHome() {
-        window.location.href = "/";
-      }
-    </script>
-  </head>
-  <body>
-    <div class="nonbody">
-      <img
-        src="https://github.com/Scratch-Computing-Alliance/Scratch-Computing-Alliance.github.io/blob/main/favicon.png?raw=true"
-        onclick="redirHome()"
-      />
-      | <a href="https://sites.google.com/view/skyhubsca/home">SkyHub</a> •
-      <a href="https://scratch.mit.edu/discuss/topic/768740/">Forums</a> •
-      <a
-        href="https://github.com/Scratch-Computing-Alliance/SCA-OSSLs/tree/main/open-source"
-        >Licenses</a
-      >
-      • <a href="https://scratch.mit.edu/studios/35370452/">Studio</a> •
-      <a href="https://scratch.mit.edu/studios/35370452/curators/">Members</a> •
-      <a href="https://github.com/Scratch-Computing-Alliance">GitHub</a> •
-      <a href="https://scratch.mit.edu/studios/36131202">Docs</a>
-    </div>
-    <section id="banner">
-      <h1>Scratch Computing Alliance</h1>
-      <h3>The future is open</h3>
-    </section>
-    <main>
-    This is the official website for the Scratch Computing Alliance. Our goal is
-    to unite techy Scratchers—could that be you?<br />
-    If you want to join the SCA, you can ask
-    <a href="https://scratch.mit.edu/studios/35370452/comments">here</a>!
-    <br />
-    </main>
-    <div class="nonbody" id="foot">
-      <p id="copyright">
-        © 2024-%CURRYEAR% Scratch Computing Alliance. This website is maintained
-        by the
-        <a href="https://github.com/Scratch-Computing-Alliance/">SCA GitHub</a>.
-        Last updated - 6/30/2025 2:52:55pm.
-      </p>
-    </div>
-  </body>
 </html>

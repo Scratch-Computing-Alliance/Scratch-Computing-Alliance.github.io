@@ -1,43 +1,114 @@
- body {
-      background-color: #f1f1f1ef
+body {
+	background-color: #f1f1f1ef;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: grid;
 }
-h1 {
-font-family: "TW Cen MT"   
-}
-p {
-font-family: "Lucida Console"      
-}
-a {
-font-family: "Lucida Console";
-}
-footer {
-border-radius: 10px;
-font-family: 'Times New Roman', Times, serif; font-size: 10px;
-background-color: gray;
-color:#f1f1f1;
-text-align: bottom, center;
-padding: 20px;
-}
-header {
-border-radius: 10px;
-background-color: gray;
-color:#f1f1f1;
-padding: 10px 25px 10px 25px;
 
+h1 {
+	font-family: "TW Cen MT"
 }
-header a {
-color:#f1f1f1;
-font-weight: bold;
-}
-footer a {
-      color:#f1f1f1;
-      font-weight: bold;
-}
-#scaicon {
-      width: 40px;
-      padding: 0px 10px 0px 0px;
-}
+
+p,
 a {
-      color: rgb(30, 198, 189);
-      font-weight: bold;
+	font-family: "Lucida Console";
+}
+
+a {
+	color: rgb(30, 198, 189);
+	font-weight: bold;
+}
+
+html {
+	font-family: "TW Cen MT";
+}
+
+body {
+	font-size: large;
+	background-color: #fafaf6;
+}
+
+.nonbody {
+	display: flex;
+	background-color: #5d617c;
+	border-radius: 100px;
+	padding: 10px 50px;
+	gap: 10px;
+	font-size: x-large;
+	color: white;
+	justify-self: center;
+	align-items: center;
+	width: calc(100vw - 100px);
+}
+
+.nonbody img {
+	height: 50px;
+	border-radius: 10px;
+	transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nonbody a {
+	color: white;
+}
+
+a {
+	color: rgb(77, 58, 244);
+	text-decoration: none;
+	transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+a:hover,
+.nonbody a:hover {
+	color: rgb(56, 193, 247);
+	text-decoration: underline;
+}
+
+.nonbody a:hover {
+	background-color: #43465b;
+	height: 100%;
+	padding: 10px;
+	border-radius: 100px;
+}
+
+.nonbody img:hover {
+	height: 55px;
+}
+
+#foot {
+	font-size: medium;
+	margin: 20px 0 0 0;
+	border-radius: 10px 10px 0 0;
+	align-self: end;
+}
+
+#foot a {
+	text-decoration: underline;
+}
+
+#banner h1,
+#banner h3 {
+	justify-self: center;
+}
+
+#banner {
+	margin: 25px;
+	justify-self: center;
+	color: #5d617c;
+	background-color: #1a1a1b;
+	width: calc(100vw - 100px);
+	padding: 100px 0;
+	font-size: 20px;
+	border-radius: 50px;
+	padding: 25px;
+}
+
+main {
+	justify-self: center;
+	text-align: center;
+}
+
+#head {
+	border-radius: 0 0 10px 10px;
+	align-self: start;
 }
